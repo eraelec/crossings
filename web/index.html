@@ -142,7 +142,7 @@
                             $.each(data.list, function(k, crossing){
                                 let a = $('<a>');
                                 a.text(crossing.title + ' ' + crossing.distance + ' м.');
-                                a.attr('href', 'https://crossings.eraelec.ru/#' + crossing.id);
+                                a.attr('href', '/#' + crossing.id);
                                 a.attr('data-id', crossing.id);
                                 a.appendTo(list);
                                 a.click(function () {
