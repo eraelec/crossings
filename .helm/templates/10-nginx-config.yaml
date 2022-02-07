@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-config
+data:
+  00-defaults.conf: |-
+    {{- .Files.Get "config/nginx/00-defaults.conf" | nindent 6 }}
+  crossings.conf: |-
+    {{- .Files.Get "config/nginx/crossings.conf" | nindent 6 }}

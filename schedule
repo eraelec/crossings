@@ -1,0 +1,6 @@
+# -*- mode: crontab -*-
+# # vi: set ft=crontab :
+# THIS SCHEDULE FILE USED BY SUPERCRONIC
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+*/1 * * * * php /app/cron/yandex-schedule-sync.php

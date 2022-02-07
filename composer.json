@@ -1,0 +1,19 @@
+{
+  "name": "golovinps/crossings",
+  "description": "description_text",
+  "minimum-stability": "dev",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Pavel S Golovin",
+      "email": "golovinps@yandex.ru"
+    }
+  ],
+  "require": {
+    "ext-dom": "*",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "joshcam/mysqli-database-class": "dev-master",
+    "jacwright/restserver": "dev-master"
+  }
+}

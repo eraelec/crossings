@@ -1,0 +1,8 @@
+.docker
+.helm
+.werf
+werf.yaml
+.gitlab-ci.yml
+crontab.txt
+.docker/mysql/schema.sql
+nginx.conf

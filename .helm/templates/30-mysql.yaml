@@ -1,0 +1,70 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql-external
+spec:
+  type: LoadBalancer
+  externalTrafficPolicy: Local
+  loadBalancerIP: 192.168.10.20
+  ports:
+    - name: mysql
+      port: 3306
+      targetPort: 3306
+      protocol: TCP
+  selector:
+    app: mysql
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysql
+spec:
+  ports:
+    - port: 3306
+  selector:
+    app: mysql
+  clusterIP: None
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: mysql
+spec:
+  serviceName: mysql
+  selector:
+    matchLabels:
+      app: mysql
+  template:
+    metadata:
+      annotations:
+        checksum/mysql-config: {{ include (print $.Template.BasePath "/10-mysql-config.yaml") . | sha256sum }}
+      labels:
+        app: mysql
+    spec:
+      containers:
+        - image: mysql:8
+          args: ['--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci','--default-authentication-plugin=mysql_native_password']
+          name: mysql
+          env:
+            - name: MYSQL_ROOT_PASSWORD
+              value: {{ pluck .Values.global.env .Values.mysql.password | first | default .Values.mysql.password._default | quote }}
+            - name: MYSQL_DATABASE
+              value: {{ pluck .Values.global.env .Values.mysql.database | first | default .Values.mysql.database._default | quote }}
+            - name: TZ
+              value: Europe/Moscow
+          ports:
+            - containerPort: 3306
+              name: mysql
+          volumeMounts:
+            - name: mysql-persistent-storage
+              mountPath: /var/lib/mysql
+            - name: mysql-config
+              mountPath: /etc/mysql/conf.d/my.cnf
+              subPath: my.cnf
+      volumes:
+        - name: mysql-persistent-storage
+          hostPath:
+            path: "/mnt/crossings-db"
+        - name: mysql-config
+          configMap:
+            name: mysql-config

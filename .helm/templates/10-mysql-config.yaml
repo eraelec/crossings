@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+data:
+  my.cnf: |-
+    {{- .Files.Get "config/mysql/my.cnf" | nindent 6 }}

@@ -1,0 +1,21 @@
+mysql:
+  host:
+    _default: mysql
+  username:
+    _default: root
+  password:
+    _default: root
+  database:
+    _default: crossings
+
+replicas:
+  _default: 1
+
+schedule:
+  _default: schedule
+
+services:
+  # https://developer.tech.yandex.ru/services/
+  yandex_rasp:
+    key:
+      _default: "stored in `secret-values.yaml`"

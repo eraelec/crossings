@@ -1,0 +1,57 @@
+version: '3.5'
+
+volumes:
+  db-data:
+
+networks:
+  crossings:
+    name: crossings_network
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: crossings-mysql
+    ports:
+      - "3316:3306"
+    cap_add:
+      - SYS_NICE
+    volumes:
+      - db-data:/var/lib/mysql
+      - ./.docker/mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+      - ./.docker/mysql/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: crossings
+      TZ: Europe/Moscow
+    restart: always
+    networks:
+      - crossings
+  nginx:
+    image: nginx:1.16-alpine
+    container_name: crossings-nginx
+    ports:
+      - "8010:80"
+    volumes:
+      - ./:/app:delegated
+      - ./.docker/nginx/sites/crossings.conf:/etc/nginx/conf.d/crossings.conf
+    environment:
+      TZ: Europe/Moscow
+    networks:
+      - crossings
+  php:
+    build:
+#      target: base
+      target: backend
+    container_name: crossings-php
+    environment:
+      DB_USER: root
+      DB_PASSWD: password
+      DB_NAME: crossings
+      DB_HOST: mysql
+      YANDEX_RASP_KEY: 'none'
+    volumes:
+      - ./.docker/php-fpm/app-custom.ini:/usr/local/etc/php/conf.custom/app-custom.ini
+      - ./.helm/config/php/tzone.ini:/usr/local/etc/php/conf.d/tzone.ini
+#      - ./:/app:delegated
+    networks:
+      - crossings

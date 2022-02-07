@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+        <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru-ru" lang="ru-ru" >
+        <head>
+
+            <script src="/templates/russo/js/jquery.js" type="text/javascript"></script>
+
+            <script type="text/javascript">
+                /*if (document.addEventListener) {
+                 document.addEventListener("DOMContentLoaded", init, false);
+                 }
+                 if ( document.attachEvent ) {
+                 document.attachEvent("onreadystatechange", init);
+                 }
+                 */
+
+
+                function setCookie (name, value, expires, path, domain, secure) {
+                    document.cookie = name + "=" + escape(value) +
+                            ((expires) ? "; expires=" + expires : "") +
+                            ((path) ? "; path=" + path : "") +
+                            ((domain) ? "; domain=" + domain : "") +
+                            ((secure) ? "; secure" : "");
+                }
+
+                function getCookie(name) {
+                    var cookie = " " + document.cookie;
+                    var search = " " + name + "=";
+                    var setStr = null;
+                    var offset = 0;
+                    var end = 0;
+                    if (cookie.length > 0) {
+                        offset = cookie.indexOf(search);
+                        if (offset != -1) {
+                            offset += search.length;
+                            end = cookie.indexOf(";", offset)
+                            if (end == -1) {
+                                end = cookie.length;
+                            }
+                            setStr = unescape(cookie.substring(offset, end));
+                        }
+                    }
+                    return(setStr);
+                }
+
+
+                jQuery(document).ready(function(){
+
+                    jQuery('.close_zapros').click(function () {
+                        setCookie('show', 'true', '','/');
+                        jQuery('.zapros').hide("slow");
+                    });
+
+                });
+
+
+
+                if(getCookie('show')=='true')
+                {
+                }
+
+                else {
+                    jQuery(document).ready(function(){
+                        jQuery('.zapros').show("fast");
+                    });
+                }
+
+            </script>
+
+
+
+
+
+            <base href="http://www.russotrans.ru/" />
+            <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+            <meta name="robots" content="index, follow" />
+            <meta name="keywords" content="железнодорожные перевозки, контейнерные перевозки, доставка, водно-смешанные, грузовые, транспортная компания, Дальний Восток, контейнер, Сибирь, Южно-Сахалинск" />
+            <meta name="title" content="RussoTrans | Справочник | Железные дороги |  | Станции" />
+            <meta name="description" content="Контейнерные перевозки: логистика контейнерных грузов России автомобильным и железнодорожным транспортом.Оперативная доставка груза до склада грузополучателя." />
+            <meta name="generator" content="" />
+            <title>RussoTrans | Справочник | Железные дороги |  | Станции</title>
+            <link href="/templates/russo/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+            <link rel="stylesheet" href="http://www.russotrans.ru/components/com_spravgd/styles/main-screen.css" type="text/css" />
+            <link rel="stylesheet" href="http://www.russotrans.ru/components/com_nomengruz/styles/main-screen.css" type="text/css" />
+
+
+
+            <link rel="stylesheet" href="/templates/system/css/system.css" type="text/css" />
+            <link rel="stylesheet" href="/templates/system/css/general.css" type="text/css" />
+            <link rel="stylesheet" href="/templates/russo/css/template.css" type="text/css" />
+            <!--[if lt IE 9]>
+            <link href="/templates/russo/css/ieonly.css" rel="stylesheet" type="text/css" />
+            <![endif]-->
+
+            <!--[if lte IE 6]>
+            <link href="http://cross/templates/russo/css/ieonly.css" rel="stylesheet" type="text/css" />
+            <![endif]-->
+            <link rel="shortcut icon" href="/templates/russo/favicon.ico" type="image/x-icon" />
+
+
+        </head>
+<body class="thrColLiqHdr">
+
+<div id="container_var3">
+    <div id="header">
+        <div id="top_left">
+            <div id="top_quick">
+                <ul class="menu">
+                    <li class="item4">
+                        <a href="http://www.russotrans.ru/">
+                            <img src="/images/stories/btn_index.jpg" align="left" alt="контейнерные перевозки из Москвы" title="старт контейнерных перевозок" />
+                        </a>
+                    </li>
+                    <li class="item6">
+                        <a href="/karta-sayta">
+                            <img src="/images/stories/btn_map.jpg" align="left" alt="навигация по сайту" title="карта сайта" />
+                        </a>
+                    </li>
+                    <li class="item5">
+                        <a href="/kontakti/">
+                            <img src="/images/stories/btn_mail.jpg" align="left" alt="контейнерные перевозки контакты" title="заказ контейнерных перевозок" />
+                        </a>
+                    </li>
+                </ul></div>
+            <div id="top_logo"><div class="bannergroup">
+
+                <div class="banneritem"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" border="0" width="207" height="50">
+                    <param name="movie" value="http://www.russotrans.ru/images/banners/logo2.swf"><embed src="http://www.russotrans.ru/images/banners/logo2.swf" loop="false" pluginspage="http://www.macromedia.com/go/get/flashplayer" type="application/x-shockwave-flash" width="207" height="50"></embed>
+                </object><div class="clr"></div>
+                </div>
+
+            </div></div>
+        </div>
+
+        <div id="top_right">
+            <div id="top_lang"><div id="jflanguageselection"><ul class="jflanguageselection"><li><img src="/images/english_flag.jpg" alt="English" title="English" border="0" class="langImg"/><a href="http://www.russotrans.ru/en/spravochnik/spravgd/sankt-peterburgskoe/stations" ><span lang="en" xml:lang="en">English</span></a></li></ul></div><!--Joom!fish V2.0.4 (Lightning)-->
+                <!-- &copy; 2003-2009 Think Network, released under the GPL. -->
+                <!-- More information: at http://www.joomfish.net -->
+            </div>
+            <div id="top_search"><form action="/search/" method="post">
+                <div class="search">
+                    <input name="searchword" id="mod_search_searchword" maxlength="20" alt="Поиск" class="inputbox" type="text" size="20" value=""/><input type="submit" value="Поиск" class="button" onclick="this.form.searchword.focus();"/>        </div>
+                <input type="hidden" name="task"   value="search" />
+                <input type="hidden" name="option" value="com_search" />
+            </form>
+            </div>
+            <div id="top_right_menu"><ul class="menu"><li class="item2"><a href="/nasha-kompaniya/kar-era/"><span>Карьера</span></a></li></ul></div>
+        </div>
+        <div id="top_flash"><div class="bannergroup">
+
+            <div class="banneritem"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" border="0" width="400" height="103">
+                <param name="movie" value="http://www.russotrans.ru/images/banners/top_menu.swf"><embed src="http://www.russotrans.ru/images/banners/top_menu.swf" loop="false" pluginspage="http://www.macromedia.com/go/get/flashplayer" type="application/x-shockwave-flash" width="400" height="103"></embed>
+            </object><div class="clr"></div>
+            </div>
+
+        </div></div>
+        <!-- end #header --></div>
+    <div id="top_line">&nbsp;</div>
+    <div id="top_">
+        <div id="top_menu" style="background:none!important" >
+            <ul class="menu"><li class="item7"><a href="/nasha-kompaniya/"><img src="/images/stories/company.jpg" alt="опытная транспортная компания" title="о РуссоТранс" /></a></li><li class="item8"><a href="/uslugi-i-resheniya/"><img src="/images/stories/uslugi.jpg" alt="услуги контейнерных и железнодорожных перевозок" title="логистика контейнерных железнодорожных перевозок" /></a></li><li class="item9"><a href="/spravochnik/"><img src="/images/stories/menu_sprav.jpg" alt="железнодорожная информация" title="железнодорожный справочник" /></a></li><li class="item10"><a href="/dokumenti-dlya-partnerov/"><img src="/images/stories/menu_doc.jpg" alt="нормативы контейнерных перевозок" title="жд документы" /></a></li><li class="item11"><a href="/kontakti/"><img src="/images/stories/menu_contact.jpg" alt="заказывайте контейнерные перевозки" title="заказ контейнерных перевозок" /></a></li></ul>
+        </div>
+        <div id="center_logo_inner">
+            <div class="bannergroup">
+
+                <div class="banneritem"><img src="http://www.russotrans.ru/images/banners/baner_sprav.jpg" alt="грузовые железнодорожные перевозки" /><div class="clr"></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <br class="clearfloat" />
+
+    <div>
+
+        <div id="wrapper">
+            <div id="mainContent_inner">
+                <div id="bread">
+
+                </div>
+
+
+
+                <div class="componentheading">
+                    Станции Октябрьской ж.д., Санкт-Петербургское отд.</div>
+
+
+
+                <table  border='1' cellspacing='0' cellpadding='5' class="sprav_table">
+                    <tr class='h1row'>
+                        <td class='tabtx'><b><a href='/spravochnik/spravgd/sankt-peterburgskoe/stations/odberby-rid' class='ml'>Код</a></b></td>
+                        <td class='tabtx'><b><a href='/spravochnik/spravgd/sankt-peterburgskoe/stations/odberby-rname' class='ml'>Название станции</a></b></td>
+                        <td class='tabtx'><b>Дорога</b></td>
+                        <td class='tabtx'><b><a href='/spravochnik/spravgd/sankt-peterburgskoe/stations/odberby-rotdel' class='ml'>Отделение</a></b></td>
+                        <td class='tabtx'><b>Расстояние</b></td>
+                    </tr>
+
+                    <tr>
+                        <td>43010</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/abrosovo">
+                                    Абросово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45603</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/andreevo">
+                                    Андреево				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44206</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/antsiferovo-mologskoe">
+                                    Анциферово - Мологское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42342</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/babino">
+                                    Бабино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42291</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/babino-2-op">
+                                    Бабино 2 (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39208</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/beloostrov">
+                                    Белоостров				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41706</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/bol-shaya-vishera">
+                                    Большая Вишера				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36303</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/borisova-griva">
+                                    Борисова Грива				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41104</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/borovenka">
+                                    Боровенка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22508</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/borovinka">
+                                    Боровинка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22300</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/borodinskoe">
+                                    Бородинское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;870</td>
+                    </tr>
+                    <tr>
+                        <td>43133</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/bugri">
+                                    Бугры				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45001</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/budogosch">
+                                    Будогощь				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41509</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/burga">
+                                    Бурга				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>28504</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/buslovskaya">
+                                    Бусловская				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21401</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/buslovskaya-eksport">
+                                    Бусловская (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41320</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/vereb-e-op">
+                                    Веребье (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21204</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/verchnecherkasovo">
+                                    Верхнечеркасово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21100</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/veschevo">
+                                    Вещево				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44850</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/vodogon">
+                                    Водогон				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21609</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/vozrozhdenie">
+                                    Возрождение				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>48207</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/voybokalo">
+                                    Войбокало				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54320</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/vompe">
+                                    Вомпе				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20004</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/viborg">
+                                    Выборг				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;829</td>
+                    </tr>
+                    <tr>
+                        <td>23407</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/viborg-perevalka">
+                                    Выборг (Перевалка)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20108</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/viborg-eksport">
+                                    Выборг (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20606</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/visotsk">
+                                    Высоцк				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23500</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/visotsk-perevalka">
+                                    Высоцк (Перевалка)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20706</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/visotsk-eksport">
+                                    Высоцк (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20907</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gavrilovo">
+                                    Гаврилово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54509</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gamzino">
+                                    Гамзино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45505</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/glazhevo">
+                                    Глажево				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>43720</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gorni">
+                                    Горны				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30222</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gori">
+                                    Горы				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39513</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gor-kovskoe">
+                                    Горьковское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45495</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gostinopol-e">
+                                    Гостинополье				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22705</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gromovo">
+                                    Громово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37607</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gruzino">
+                                    Грузино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41852</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/gryadi">
+                                    Гряды				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37109</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/dacha-dolgorukova">
+                                    Дача Долгорукова				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>33606</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/dacha-dolgorukova-perevalka">
+                                    Дача Долгорукова (Перевалка)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36708</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/dacha-dolgorukova-eksport">
+                                    Дача Долгорукова (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42925</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/dunevka-op">
+                                    Дуневка (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20201</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ermilovo">
+                                    Ермилово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21011</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zhitkovo">
+                                    Житково				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>48404</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zhicharevo">
+                                    Жихарево				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36905</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zanevskiy-post">
+                                    Заневский пост				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37202</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zanevskiy-post-eksport">
+                                    Заневский пост (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54551</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zarubinskaya">
+                                    Зарубинская				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39301</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/zelenogorsk">
+                                    Зеленогорск				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30805</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/izhori">
+                                    Ижоры				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42107</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/irsa">
+                                    Ирса				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>43203</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kabozha">
+                                    Кабожа				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21702</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kamennogorsk">
+                                    Каменногорск				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39602</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kannel-yarvi">
+                                    Каннельярви				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38008</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kapitolovo">
+                                    Капитолово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39903</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kapitolovo-eksport">
+                                    Капитолово (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44300</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kipriya-rzd">
+                                    Киприя (РЗД)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20803</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kirillovskoe">
+                                    Кирилловское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45209</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kirishi">
+                                    Кириши				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36407</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kirpichniy-zavod">
+                                    Кирпичный завод				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31600</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kolpino">
+                                    Колпино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54104</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kotovo">
+                                    Котово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22211</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/krasniy-cokol">
+                                    Красный Cокол				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23106</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kuznechnoe">
+                                    Кузнечное				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54000</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kulotino">
+                                    Кулотино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39814</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kuolemayarvi">
+                                    Куолемаярви				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>43805</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kushavera">
+                                    Кушавера				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37405</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/kushelevka">
+                                    Кушелевка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36337</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ladozhskoe-ozero">
+                                    Ладожское Озеро				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38215</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/lanskaya">
+                                    Ланская				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38807</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/levashovo">
+                                    Левашово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22007</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/lesogorskiy">
+                                    Лесогорский				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39000</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/lisiy-nos">
+                                    Лисий нос				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38703</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/lisiy-nos-eksport">
+                                    Лисий нос (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21331</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/luzhayka">
+                                    Лужайка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42408</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/liuban">
+                                    Любань				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41602</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/malaya-vishera">
+                                    Малая Вишера				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45800</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/maluksa">
+                                    Малукса				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30504</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/manushkino">
+                                    Манушкино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30203</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/mga">
+                                    Мга				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36106</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/mel-nichiy-ruchey">
+                                    Мельничий Ручей				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40544</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/moyka">
+                                    Мойка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41418</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/mstinskiy-most">
+                                    Мстинский мост				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22902</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/miulliupel-to">
+                                    Мюллюпельто				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44507</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/nebolchi">
+                                    Неболчи				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36801</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/neva">
+                                    Нева				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30107</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/nevdubstroy">
+                                    Невдубстрой				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36604</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/nevskaya-dubrovka">
+                                    Невская Дубровка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38900</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/novaya-derevnya">
+                                    Новая Деревня				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40101</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/novgorod-na-volchove">
+                                    Новгород-на-Волхове				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>32302</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/novolisino">
+                                    Новолисино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>48122</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/noviy-bit">
+                                    Новый быт				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31009</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/obuchovo">
+                                    Обухово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>53703</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/okulovka">
+                                    Окуловка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37804</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/orechovo">
+                                    Орехово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22813</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/otradnoe">
+                                    Отрадное				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30400</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pavlovo-na-neve">
+                                    Павлово-на-Неве				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38510</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pargolovo">
+                                    Парголово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38309</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/parnas">
+                                    Парнас				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38600</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/parnas-eksport">
+                                    Парнас (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30608</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pella">
+                                    Пелла				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37700</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/peri">
+                                    Пери				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54602</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pernitsa-op">
+                                    Перница (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42906</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pestovo">
+                                    Пестово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44009</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pes">
+                                    Песь				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36500</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/petrokrepost">
+                                    Петрокрепость				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22645</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/petyayarvi">
+                                    Петяярви				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;784</td>
+                    </tr>
+                    <tr>
+                        <td>37024</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/piskarevka">
+                                    Пискаревка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45711</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pogost-e">
+                                    Погостье				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40703</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/podberez-e">
+                                    Подберезье				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>53900</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/poddub-e">
+                                    Поддубье				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37306</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/poliustrovo">
+                                    Полюстрово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20517</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/popovo">
+                                    Попово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45247</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/posadnikovo">
+                                    Посадниково				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20409</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pribilovo">
+                                    Прибылово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39706</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/privetnenskoe">
+                                    Приветненское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21505</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/prigorodnaya">
+                                    Пригородная				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20305</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/primorsk">
+                                    Приморск				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23002</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/priozersk">
+                                    Приозерск				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22103</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/prudi">
+                                    Пруды				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>32105</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pustin-ka">
+                                    Пустынька				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>45105</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/pchevzha">
+                                    Пчевжа				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41000</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/radofinnikovo">
+                                    Радофинниково				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>36229</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/rach-ya">
+                                    Рахья				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37005</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/rzhevka">
+                                    Ржевка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40900</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/rogavka">
+                                    Рогавка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39405</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/roschino">
+                                    Рощино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38101</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ruch-i">
+                                    Ручьи				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30909</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ribatskoe">
+                                    Рыбацкое				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42501</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ryabovo">
+                                    Рябово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31812</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sankt-peterburg-glavniy">
+                                    Санкт-Петербург - Главный				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30006</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sankt-peterburg-sortirovochniy-moskovskiy">
+                                    Санкт-Петербург - Сортировочный - Московский				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;682</td>
+                    </tr>
+                    <tr>
+                        <td>31808</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sankt-peterburg-tovarniy-moskovskiy">
+                                    Санкт-Петербург - Товарный - Московский				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38205</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sankt-peterburg-finlyandskiy">
+                                    Санкт-Петербург - Финляндский				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>30701</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sapernaya">
+                                    Саперная				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21806</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/svetogorsk">
+                                    Светогорск				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>21901</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/svetogorsk-eksport">
+                                    Светогорск (Экспорт)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39104</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sestroretsk">
+                                    Сестрорецк				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31634</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/slavyanka">
+                                    Славянка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>20502</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sovetskiy">
+                                    Советский				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44102</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sominka">
+                                    Соминка				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37503</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/sosnovo">
+                                    Сосново				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40671</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/spasskaya-polist">
+                                    Спасская Полисть				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>32139</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/stekol-niy">
+                                    Стекольный				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23252</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/siuvyaoro-op">
+                                    Сювяоро (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23303</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/siuvyaoro-eksport">
+                                    Сювяоро - Экспорт				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44846</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/tal-tsi-mologskie">
+                                    Тальцы - Мологские				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44371</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/terebutenets">
+                                    Теребутенец				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>37908</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/toksovo">
+                                    Токсово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>54227</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/toporok">
+                                    Топорок				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>41208</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/torbino">
+                                    Торбино				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42200</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/torfyanoe">
+                                    Торфяное				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31302</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/tosno">
+                                    Тосно				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>40614</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/tregubovo-op">
+                                    Трегубово (ОП)				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38525</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/udel-naya">
+                                    Удельная				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31206</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ushaki">
+                                    Ушаки				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>39316</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/ushkovo">
+                                    Ушково				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>43909</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/chvoynaya">
+                                    Хвойная				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>22404</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/chiytola">
+                                    Хийтола				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>44719</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/chottsi">
+                                    Хотцы				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42003</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/chudovo-moskovskoe">
+                                    Чудово - Московское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>42018</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/chudovo-novgorodskoe">
+                                    Чудово - Новгородское				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>31507</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/shapki">
+                                    Шапки				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>38506</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/shuvalovo">
+                                    Шувалово				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>23202</td>
+                        <td >
+                            <b>
+                                <a href="/spravochnik/spravgd/oktyabr-skaya/sankt-peterburgskoe/elisenvaara">
+                                    Элисенваара				</a>
+                            </b>
+                        </td>
+                        <td>ОКТ</td>
+                        <td>Санкт-Петербургское</td>
+                        <td>&nbsp;</td>
+                    </tr>
+
+
+                </table>
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="sidebar1_inner">
+            <ul class="menu"><li class="parent item49 twoline"><a onclick="menuClick(this);" href="javascript:void(0);"><span>Нормативные документы</span></a><ul style="display: none"><li class="item67"><a href="/spravochnik/normativnie-dokumenti/osnovnie/"><span>Основные</span></a></li><li class="item69"><a href="/spravochnik/normativnie-dokumenti/pravila-perevozok/"><span>Правила перевозок</span></a></li><li class="item70"><a href="/spravochnik/normativnie-dokumenti/telegrammi/"><span>Телеграммы</span></a></li></ul></li><li class="parent item50"><a onclick="menuClick(this);" href="javascript:void(0);"><span>Номенклатура грузов</span></a><ul style="display: none"><li class="item71"><a href="/spravochnik/etsng"><span>ЕТСНГ</span></a></li><li class="item72"><a href="/spravochnik/gng"><span>ГНГ</span></a></li><li class="item73"><a href="/spravochnik/ngpup"><span>НГПУП</span></a></li></ul></li><li class="parent active item51 twoline"><a onclick="menuClick(this);" href="javascript:void(0);"><span>Станции железных дорог</span></a><ul><li class="item88"><a href="/spravochnik/spravgd"><span>Железные дороги</span></a></li><li id="current" class="active item61"><a href="/spravochnik/spravgd/divisions"><span>Отделения</span></a></li><li class="item62"><a href="/spravochnik/spravgd/stationsalpha"><span>Станции</span></a></li></ul></li><li class="parent item52 twoline"><a onclick="menuClick(this);" href="javascript:void(0);"><span>Характеристики вагонов и контейнеров</span></a><ul style="display: none"><li class="item84"><a href="/spravochnik/charakteristiki-vagonov-i-konteynerov/universal-nie-konteyneri/"><span>контейнеры</span></a></li><li class="item114"><a href="/spravochnik/charakteristiki-vagonov-i-konteynerov/vagon/"><span>вагоны</span></a></li></ul></li></ul>
+        </div>
+        <div id="sidebar2_inner">
+
+            <div class="moduletable_contact">
+
+
+
+
+                <div class="prtizertext_container_contact" >
+                    <div class="prtizertext_title">
+                        <a href="http://www.russotrans.ru/uslugi-i-resheniya/konteynernie-perevozki/vnutrirossiyskie" style="position: relative;">
+                            Контакты                 </a>         </div>
+                    <div class="prtizertext_body" style="margin:1em 0 0 0; padding:0 0 1em 0;">
+
+                        <a href="http://www.russotrans.ru/uslugi-i-resheniya/konteynernie-perevozki/vnutrirossiyskie" style="position: relative; color: black" class="no_underline">
+
+
+                            <img src="http://www.russotrans.ru/images/imageproccessing/images/tizers/p1x1_105x105x4.png" align="left" alt="" title="" />
+
+                        </a>
+                        <a href="http://www.russotrans.ru/uslugi-i-resheniya/konteynernie-perevozki/vnutrirossiyskie" style="position: relative; color: black" class="no_underline_hover">
+                            За дополнительной информацией по услуге <strong>контейнерные перевозки</strong> <br/>
+                            обращайтесь по тел.<br/>
+                            +7(495)229-49-69<br/>
+                            +7(495)933-85-51<br/>
+                            <a href='mailto:info@russotrans.ru'>info@russotrans.ru</a>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="moduletable">
+
+
+
+
+                <div class="prtizertext_container" >
+                    <div class="prtizertext_title">
+                        <a href="/uslugi-i-resheniya/tarifnaya-politika-russo-trans/" style="position: relative;">
+                            Тарифная политика и цены                 </a>         </div>
+                    <div class="prtizertext_body" style="margin:1em 0 0 0; padding:0 0 1em 0;">
+
+                        <a href="/uslugi-i-resheniya/tarifnaya-politika-russo-trans/" style="position: relative; color: black" class="no_underline">
+
+
+                            <img src="http://www.russotrans.ru/images/imageproccessing/images/tizers/tarif_politika1_105x74x4.png" align="left" alt="стоимость контейнерных перевозок" title="тарифы контейнерных перевозок" />
+
+                        </a>
+                        <a href="/uslugi-i-resheniya/tarifnaya-politika-russo-trans/" style="position: relative; color: black" class="no_underline_hover">
+                            Стоимость услуг в нашей компании формируется индивидуально для
+                            каждого клиента.                         </a>
+                    </div>
+                </div>
+            </div>
+            <div class="moduletable">
+
+
+
+
+                <div class="prtizertext_container" >
+                    <div class="prtizertext_title">
+                        <a href="/nasha-kompaniya/oborudovanie/nashi-avtomobili" style="position: relative;">
+                            Наши автомобили                 </a>         </div>
+                    <div class="prtizertext_body" style="margin:1em 0 0 0; padding:0 0 1em 0;">
+
+                        <a href="/nasha-kompaniya/oborudovanie/nashi-avtomobili" style="position: relative; color: black" class="no_underline">
+
+
+                            <img src="http://www.russotrans.ru/images/imageproccessing/images/tizers/tizer_r1_105x70x4.png" align="left" alt="автопарк контейнеровозов" title="автопревозки контейнеров" />
+
+                        </a>
+                        <a href="/nasha-kompaniya/oborudovanie/nashi-avtomobili" style="position: relative; color: black" class="no_underline_hover">
+                            <p>ЗАО «РуссоТранс» эксплуатирует собственный парк магистральных тягачей выполняя контейнерные перевозки</p>.                         </a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+        <!-- end #mainContent -->
+    </div>
+    <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+    <br class="clearfloat" />
+
+    <div id="footer">
+        <div id="footer_line">
+            <div id="footer_line1"></div>
+            <div id="footer_line2"></div>
+        </div>
+        <div id="footer_bottom">
+            <div id="footer_left"><div class="bannergroup">
+
+                <div class="banneritem"><a href="/banners/nizhniy-logotip-variant-1"><img src="http://www.russotrans.ru/images/banners/logo_bottom.jpg" alt="грузовые железнодорожные перевозки" /></a><div class="clr"></div>
+                </div>
+
+            </div></div>
+            <div id="footer_right">
+                <ul class="menu"><li class="item15"><a href="/nasha-kompaniya/"><span>Наша компания</span></a></li><li class="item16"><a href="/uslugi-i-resheniya/"><span>Услуги и решения</span></a></li><li class="item17"><a href="/spravochnik/"><span>Справочник</span></a></li><li class="item18 twoline"><a href="/dokumenti-dlya-partnerov/"><span>Документы для партнеров</span></a></li><li class="item19"><a href="/kontakti/"><span>Контакты</span></a></li></ul>
+            </div>
+        </div>
+        <div style=" color: #505050; font-family: Tahoma;  font-size: 11px;  font-weight: 700; margin:20px 0; padding-left:119px;"><!--© 2000-2013, ЗАО "РТ" Железнодорожные контейнерные перевозки грузов. <br>Все права защищены. Несанкционированное использование материалов сайта запрещено-->
+            © 2000-2015, ЗАО "РТ" Железнодорожные контейнерные перевозки грузов.<br>
+            Все права защищены. Несанкционированное использование материалов сайта запрещено
+        </div>
+
+
+
+        <!-- end #footer --></div>
+
+    <!-- end #container --></div>
+
+
+
+<!-- Yandex.Metrika counter -->
+<noindex>
+    <div style="display:none;"><script type="text/javascript">
+        (function(w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter45118 = new Ya.Metrika({id:45118,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+                }
+                catch(e) { }
+            });
+        })(window, 'yandex_metrika_callbacks');
+    </script></div>
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript" defer="defer"></script>
+    <noscript><div><img src="//mc.yandex.ru/watch/45118" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+</noindex>
+<!-- /Yandex.Metrika counter -->
+
+<noindex>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-23523508-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+    </script>
+
+</noindex>
+
+<div class="zapros"><span  class="close_zapros"  title="закрыть" ></span><a href="/zapros-ctavki/" title="запрос ставки" class="go_zapros">Запрос ставки</a></div>
+<script type="text/javascript" src="//yourrobot.ru/main/getForm?code=6974ce5ac660610b44d9b9fed0ff9548" charset="UTF-8"></script>
+</body>
+
+
+
+<script type="text/javascript" src="/templates/russo/js/main.js"></script>
+
+
+
+
+
+
+
+
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>

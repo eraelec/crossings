@@ -1,0 +1,80 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Chart.Name }}-app
+spec:
+  strategy:
+    type: RollingUpdate
+  selector:
+    matchLabels:
+      app: {{ .Chart.Name }}-app
+  replicas: {{ pluck .Values.werf.env .Values.replicas | first | default .Values.replicas._default }}
+  template:
+    metadata:
+      annotations:
+        checksum/php-config: {{ include (print $.Template.BasePath "/10-php-config.yaml") . | sha256sum }}
+        checksum/nginx-config: {{ include (print $.Template.BasePath "/10-nginx-config.yaml") . | sha256sum }}
+      labels:
+        app: {{ .Chart.Name }}-app
+    spec:
+      imagePullSecrets:
+        - name: {{ .Chart.Name }}-registrysecret
+      volumes:
+        - name: php-config
+          configMap:
+            name: php-config
+        - name: nginx-config
+          configMap:
+            name: nginx-config
+      containers:
+        - name: backend
+          image: {{ .Values.werf.image.backend }}
+          command: ["/usr/local/sbin/php-fpm", "-F"]
+          volumeMounts:
+            - name: php-config
+              mountPath: /usr/local/etc/php/conf.custom/app-custom.ini
+              subPath: app-custom.ini
+            - name: php-config
+              mountPath: /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+              subPath: docker-php-ext-xdebug.ini
+            - name: php-config
+              mountPath: /usr/local/etc/php-fpm.d/zzz-php-fpm-config.conf
+              subPath: zzz-php-fpm-config.conf
+            - name: php-config
+              mountPath: /usr/local/etc/php/conf.d/tzone.ini
+              subPath: tzone.ini
+          resources:
+            requests:
+              cpu: 50m
+              memory: 256Mi
+              ephemeral-storage: 512Mi
+            limits:
+              memory: 1Gi
+              ephemeral-storage: 1Gi
+          env:
+            - name: PHP_INI_SCAN_DIR
+              value: :/usr/local/etc/php/conf.custom
+{{- include "app_env" . | indent 12 }}
+          ports:
+            - containerPort: 9000
+        - name: frontend
+          image: {{ .Values.werf.image.frontend }}
+          volumeMounts:
+            - name: nginx-config
+              mountPath: /etc/nginx/conf.d
+          ports:
+            - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Chart.Name }}-app
+  labels:
+    app: {{ .Chart.Name }}-app
+spec:
+  ports:
+    - port: 80
+      targetPort: 80
+      name: pult
+  selector:
+    app: {{ .Chart.Name }}-app

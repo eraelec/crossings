@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: php-config
+data:
+  app-custom.ini: |-
+    upload_max_filesize = 64M
+    post_max_size = 64M
+    error_reporting = E_ALL & ~E_DEPRECATED & ~E_NOTICE & ~E_WARNING
+    display_errors = Off
+    display_startup_errors = Off
+    log_errors = On
+    error_log = /dev/stderr
+  docker-php-ext-xdebug.ini: |-
+    ;disabled
+  zzz-php-fpm-config.conf: |-
+    {{- .Files.Get "config/php/zzz-php-fpm-config.conf" | nindent 6 }}
+  tzone.ini: |-
+    {{- .Files.Get "config/php/tzone.ini" | nindent 6 }}

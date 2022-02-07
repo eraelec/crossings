@@ -1,0 +1,13 @@
+project: crossings
+configVersion: 1
+deploy:
+  namespace: crossings-[[ env ]]
+---
+image: backend
+dockerfile: Dockerfile
+target: backend
+
+---
+image: frontend
+dockerfile: Dockerfile
+target: frontend
