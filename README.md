@@ -1,4 +1,4 @@
-# Crossings crossing helper
+# Railway crossing helper
 That application is an attempt to overcome the problems of driving across closed railway crossings. It shows the relevant schedule for the closest railway crossings according to your current geo-location.
 
 The production environment is deployed at: https://crossings.eraelec.ru.
