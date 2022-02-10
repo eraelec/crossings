@@ -1,8 +1,14 @@
+# folders
 .docker
+.git
+.github
 .helm
-.werf
+.idea
+
+# files
+.dockerignore
+.gitignore
+.werf_secret_key
+docker-compose.yml
 werf.yaml
-.gitlab-ci.yml
-crontab.txt
-.docker/mysql/schema.sql
-nginx.conf
+README.md

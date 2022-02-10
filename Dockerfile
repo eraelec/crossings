@@ -1,4 +1,4 @@
-FROM php:7.2-fpm-alpine as base
+FROM php:8.0.14-fpm-alpine as base
 WORKDIR /app
 
 RUN set -x \
