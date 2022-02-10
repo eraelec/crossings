@@ -9,7 +9,7 @@ metadata:
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
   rules:
-    - host: {{ .Values.global.ci_environment_url }}
+    - host: {{ .Values.global.env_host }}
       http:
         paths:
           - path: /
@@ -19,5 +19,5 @@ spec:
 
   tls:
     - hosts:
-        - {{ .Values.global.ci_environment_url }}
+        - {{ .Values.global.env_host }}
       secretName: {{ .Chart.Name }}-tls

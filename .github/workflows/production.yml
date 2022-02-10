@@ -1,0 +1,26 @@
+name: CI
+on:
+  push:
+    branches:
+      - main
+jobs:
+  converge:
+    runs-on: self-hosted
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Converge
+        uses: werf/actions/converge@v1.2
+        with:
+          env: production
+        env:
+          WERF_SECRET_KEY: ${{ secrets.WERF_SECRET_KEY }}
+          WERF_SET_ENV_HOST: "global.env_host=crossings.eraelec.ru"
+      - name: Cleanup
+        uses: werf/actions/cleanup@v1.2
+        env:
+          WERF_REPO_GITHUB_TOKEN: ${{ secrets.WERF_CLEANUP_PAT }}
